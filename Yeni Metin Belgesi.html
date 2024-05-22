@@ -1,90 +1,51 @@
-html
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kişisel Blog</title>
+    <title>Eleştiri Blogu</title>
     <style>
         body {
-            margin: 0;
+            background-color: #000;
+            color: #fff;
             font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
+            margin: 0;
+            padding: 20px;
         }
         header {
-            background-color: #1e1e1e;
-            padding: 1em;
             text-align: center;
+            margin-bottom: 50px;
         }
-        nav {
+        header h1 {
+            font-size: 2.5em;
             margin: 0;
-            padding: 1em;
-            text-align: center;
         }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 1em;
+        .post {
+            margin-bottom: 40px;
         }
-        nav a:hover {
-            text-decoration: underline;
+        .post h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
         }
-        .content {
-            padding: 2em;
-        }
-        footer {
-            background-color: #1e1e1e;
-            padding: 1em;
-            text-align: center;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+        .post p {
+            font-size: 1.2em;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Kişisel Blog</h1>
-        <nav>
-            <a href="#hakkimda">Hakkımda</a>
-            <a href="#yazilar">Yazılar</a>
-            <a href="#iletisim">İletişim</a>
-        </nav>
+        <h1>Eleştiri Blogu</h1>
     </header>
-    <div class="content">
-        <section id="hakkimda">
-            <h2>Hakkımda</h2>
-            <p>Merhaba, ben İsimsiz. Bu blogda çeşitli konularda eleştiriler ve yazılar paylaşıyorum. Yazmayı ve düşüncelerimi paylaşmayı seviyorum.</p>
-        </section>
-        <section id="yazilar">
-            <h2>Yazılar</h2>
-            <p>Burada çeşitli konularda yazdığım makaleleri bulabilirsiniz.</p>
-            <article>
-                <h3>Yazı Başlığı 1</h3>
-                <p>Yazı içeriği 1...</p>
-            </article>
-            <article>
-                <h3>Yazı Başlığı 2</h3>
-                <p>Yazı içeriği 2...</p>
-            </article>
-        </section>
-        <section id="iletisim">
-            <h2>İletişim</h2>
-            <p>Bana ulaşmak için aşağıdaki formu doldurabilirsiniz.</p>
-            <form>
-                <label for="name">Adınız:</label><br>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="email">E-posta:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="message">Mesaj:</label><br>
-                <textarea id="message" name="message"></textarea><br><br>
-                <input type="submit" value="Gönder">
-            </form>
-        </section>
+
+    <div class="post">
+        <h2>İlk Eleştiri Başlığı</h2>
+        <p>Bu, eleştiri yazınızın yer alacağı örnek bir paragraflık metindir. Burada düşüncelerinizi, yorumlarınızı ve eleştirilerinizi paylaşabilirsiniz.</p>
     </div>
-    <footer>
-        <p>&copy; 2024 Kişisel Blog. Tüm hakları saklıdır.</p>
-    </footer>
+
+    <div class="post">
+        <h2>İkinci Eleştiri Başlığı</h2>
+        <p>Bu, ikinci eleştiri yazınızın yer alacağı örnek bir paragraflık metindir. Burada daha fazla düşüncenizi, yorumlarınızı ve eleştirilerinizi paylaşabilirsiniz.</p>
+    </div>
 </body>
 </html>
